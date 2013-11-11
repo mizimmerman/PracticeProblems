@@ -6,6 +6,8 @@ loops: loops.o
 strings: strings.o
 	g++ -Wall -g strings.cpp -o strings 
 
+recursion: recursion.o
+	g++ -Wall -g recursion.cpp -o recursion 
 
 clean:
-	rm *.o loops strings
+	rm *.o loops strings recursion
