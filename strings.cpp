@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 using namespace std;
+void printCharArr(char arr[4]);
 
 int main() {
 	//declare two strings (is either of these wrong?)
@@ -8,10 +9,10 @@ int main() {
 	string second("Zimmerman");
 	
 	//assign the string "Michael Zimmerman" to full
-	string full = /*??*/;
+	string full = first + " " + second;
 
 	//print the string full to standard output
-	cout /*??*/;
+	cout << full << endl;
 
 	//what will print?
 	if(first < second) {
@@ -22,11 +23,12 @@ int main() {
 	}
 
 	string in;
-	//input a string from standard input here
+	cout << "Input a string: ";
+	cin >> in;
 	cout << in << endl;
 
 	//what if we want in to be an entire line of input?
-	//do that here
+	getline(cin,in);
 	cout << in << endl;
 
 
@@ -43,14 +45,28 @@ int main() {
 		cout << "the last element is not the same\n";
 	}
 
-	for(int i = 0; i < 4; i++) {
-		//change str to hold "John" instead of Mike
-		//change arr to hold "Jake" instead of Mike
+	for(int x = 0; x < 4; x++) {
+		//change str to hold "aaaa" instead of Mike
+		str.at(x) = 'a';
+		//change arr to hold "bbbb" instead of Mike
+		arr[x] = 'b';
+		cout << str << " ";
+		printCharArr(arr);
+		cout << endl;
 	}
 
 	cout << "str is: " << str << endl;
-	cout << "arr is: " << arr[0] << arr[1] << arr[2] << arr[3] << endl;
+	cout << "arr is: ";
+	printCharArr(arr);
+	cout << endl;
 
 
 	return 0;
+}
+
+void printCharArr(char arr[4]) {
+
+	for(int i = 0; i < 4; i++) {
+		cout << arr[i];
+	}
 }
