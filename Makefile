@@ -1,9 +1,11 @@
 all: 
 
-loop: loop.o
-	g++ -Wall -g loop.cpp -o loop 
+loops: loops.o
+	g++ -Wall -g loops.cpp -o loops
 
+strings: strings.o
+	g++ -Wall -g strings.cpp -o strings 
 
 
 clean:
-	rm *.o loop
+	rm *.o loops strings

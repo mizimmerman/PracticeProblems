@@ -1,6 +1,5 @@
 #include <iostream>
 #include <vector>
-#include <string>
 using namespace std;
 
 int main() {
@@ -12,12 +11,12 @@ int main() {
 	
 	//first, alphaVec needs values
 	for(/*stuff*/;;) {
-		//do things
+		//put the letters a-z into the vector
 	}
 
 	//next, what is in intVec?
 	for(/*stuff*/;;) {
-		//do things
+		//print each member of the vector on a new line
 	}
 
 	return 0;
