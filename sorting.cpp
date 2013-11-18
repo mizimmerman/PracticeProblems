@@ -2,50 +2,32 @@
 #include <vector>
 #include <cstdlib>
 using namespace std;
+#include "sorting.h"
 
 template <typename T>
-void bubbleSort(vector<T> &vec);
+void bubble_sort(vector<T> &vec) {
+	//Needs work
+}
 
 template <typename T>
-void mergeSort(vector<T> &vec);
+void merge_sort(vector<T> &vec) {
+	//Needs work
+}
 
 template <typename T>
-void printVector(vector<T> &vec);
+void print(vector<T> &vec) {
+	//Needs work
+}
 
-int main() {
-	srand(0);
-	vector<int> vec1(10);
-	vector<char> vec2(10);
-
-	for(int i = 0; i < 10; i++) {
-		vec1[i] = rand()%100;
-		vec2[i] = 'a' + rand() % 26;
+void char_fill(vector<char> &vec) {
+	for(unsigned int i = /*what goes here?*/; /*here?*/; /*here?*/) {
+		vec[i] = 'a' + rand() % 26;
 	}
-
-	printVector(vec1);
-	printVector(vec2);
-	return 0;
 }
 
-template <typename T>
-void bubbleSort(vector<T> &vec) {
-
-
-}
-
-template <typename T>
-void mergeSort(vector<T> &vec) {
-
-
-}
-
-template <typename T>
-void printVector(vector<T> &vec) {
-	unsigned int i = 0;
-	while(i < vec.size()-1) {
-		cout << vec[i++] << ", ";
+void int_fill(vector<int> &vec) {
+	for(unsigned int i = /*what goes here?*/; /*here?*/; /*here?*/) {
+		vec[i] = rand() % 100;
 	}
-	cout << vec[i] << endl;
 }
-
 
