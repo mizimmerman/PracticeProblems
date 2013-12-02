@@ -30,9 +30,16 @@ int main() {
 	 * What is the end result of the container?
 	 */
 
+	 print_vector(vec);
+
 	 /* Exercise: 
 	  * Re-write the elements of the container with the numbers 3, 4, ..., SIZE + 3
 	  */
+
+	 //TODO:
+	 //Write exercise code here
+
+	 print_vector(vec);
 
 	return 0;
 }
